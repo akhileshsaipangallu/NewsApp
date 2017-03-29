@@ -1,0 +1,82 @@
+{% extends 'news/base_index.html' %}
+{% load staticfiles %}
+
+{% block title %}
+    News | {{ title }}
+{% endblock title %}
+
+{% block style %}
+    .news_tile{
+        height: 265.41px;
+        width: 181.88px;
+    }
+{% endblock style %}
+
+{% block news_area %}
+
+    <div class="col-md-9">
+        {% if news_list %}
+            {% for news_item in news_list %}
+                <div class="col-md-3">
+                    <div class="feature_news_item">
+                        <div class="item news_tile">
+                            <div class="item_wrapper">
+                                <div class="item_img">
+                                    {% block news_image %}
+                                        <img class="img-responsive" src="{{ news_item.StoryImage }}" alt="Chania">
+                                    {% endblock news_image %}
+                                </div>
+                            </div>
+                            <!--item_wrapper-->
+                            {% block news_title %}
+                                <div class="item_content">
+                                    <h6>
+                                        <a  href="" value="{{ news_item.link }}" class="modal_url" data-toggle="modal" data-target="#myModal">
+                                            {{ news_item.title }}
+                                        </a>
+                                    </h6>
+                                </div>
+                            {% endblock news_title %}
+                        </div>
+                        <!--item-->
+                    </div>
+                    <!--feature_news_item-->
+                </div>
+                <!--col-md-6-->
+            {% endfor %}
+        {% else %}
+            {% url 'latest_stories' %}
+        {% endif %}
+
+        <!-- Modal -->
+        <div id="myModal" class="modal fade" role="dialog">
+            <div class="modal-dialog">
+                <!-- Modal content-->
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <iframe src="" id="modal-content">
+                            <p>Your browser does not support iframes.</p>
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock news_area %}
+
+{% block script %}
+    <script>
+        var news_url
+        $(document).ready(
+            function(){
+                $(".modal_url").on("click",function(){
+                    news_url=$(this).attr("value");
+                    console.log(news_url)
+                })
+                $(".delete-confirm").on("click",function(){
+
+                })
+            }
+        )
+    </script>
+{% endblock script %}
