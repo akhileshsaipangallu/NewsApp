@@ -1,4 +1,9 @@
+# Django
+from django.conf import settings
+from django.conf.urls.static import static
 from django.conf.urls import url
+
+# local Django
 from . import views
 
 
@@ -14,4 +19,4 @@ urlpatterns = [
     url(r'^movies/$', views.movies, name='movies'),
     url(r'^auto/$', views.auto, name='auto'),
     # url(r'^(?P<id>\d+)/$', views.post_details, name='post_details'),
-]
+] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)

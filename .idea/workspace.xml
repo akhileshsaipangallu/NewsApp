@@ -2,56 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d53c5ae0-13ff-4c06-b79b-b50241cb0183" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/img/category.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/img/fb.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/img/img-ad.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/img/img-ad2.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/img/img-author.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/img/img-author1.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/img/img-author2.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/img/img-carousel1.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/img/img-carousel2.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/img/img-category.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/img/img-category2.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/img/img-category3.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/img/img-category4.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/img/img-category5.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/img/img-category6.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/img/img-category7.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/img/img-hockey.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/img/img-list.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/img/img-list2.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/img/img-list3.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/img/img-list4.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/img/img-list5.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/img/img-list6.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/img/img-list7.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/img/img-list8.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/img/img-list9.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/img/img-news.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/img/img-news1.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/img/img-news2.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/img/img-news___.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/img/img-single-ad.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/img/img-single.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/img/img-sitebar.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/img/img_ad.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/img/img_feature.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/img/img_feature2.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/img/img_feature_news.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/img/img_feature_news3.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/img/img_hockey.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/img/video-thumb.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/img/video.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/img/video2.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/img/video3.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/templates/news/home.html" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/img/logo.png" afterPath="$PROJECT_DIR$/static/img/logo.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/news/models.py" afterPath="$PROJECT_DIR$/news/models.py" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/jquery.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/offcanvas.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/owl.carousel.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/script.js" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/NewsApp.iml" afterPath="$PROJECT_DIR$/.idea/NewsApp.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/NewsApp/settings.py" afterPath="$PROJECT_DIR$/NewsApp/settings.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/NewsApp/urls.py" afterPath="$PROJECT_DIR$/NewsApp/urls.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/news/urls.py" afterPath="$PROJECT_DIR$/news/urls.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/news/views.py" afterPath="$PROJECT_DIR$/news/views.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/css/style.css" afterPath="$PROJECT_DIR$/static/css/style.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/news/base_index.html" afterPath="$PROJECT_DIR$/templates/news/base_index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/news/stories.html" afterPath="$PROJECT_DIR$/templates/news/stories.html" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -69,10 +32,10 @@
       <file leaf-file-name="urls.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/news/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="5" column="57" lean-forward="false" selection-start-line="5" selection-start-column="43" selection-end-line="5" selection-end-column="57" />
+            <state relative-caret-position="165">
+              <caret line="11" column="63" lean-forward="false" selection-start-line="11" selection-start-column="52" selection-end-line="11" selection-end-column="63" />
               <folding>
-                <element signature="e#0#32#0" expanded="true" />
+                <element signature="e#9#41#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -81,26 +44,62 @@
       <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/news/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="165">
+              <caret line="137" column="24" lean-forward="true" selection-start-line="137" selection-start-column="24" selection-end-line="137" selection-end-column="24" />
               <folding>
-                <element signature="e#19#30#0" expanded="true" />
+                <element signature="e#34#51#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="stories.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="base_index.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/templates/news/base_index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="105">
+              <caret line="45" column="25" lean-forward="false" selection-start-line="45" selection-start-column="25" selection-end-line="45" selection-end-column="25" />
+              <folding>
+                <element signature="n#style#0;n#img#0;n#a#0;n#div#0;n#div#0;n#nav#0;n#header#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="stories.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/news/stories.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="318">
-              <caret line="71" column="27" lean-forward="false" selection-start-line="71" selection-start-column="27" selection-end-line="71" selection-end-column="27" />
+            <state relative-caret-position="750">
+              <caret line="50" column="56" lean-forward="false" selection-start-line="50" selection-start-column="56" selection-end-line="50" selection-end-column="56" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="childNodes.py" pinned="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/Desktop/childNodes.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="30">
+              <caret line="2" column="7" lean-forward="false" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>sc</find>
+      <find>xmltodict</find>
+      <find>js</find>
+      <find>KeyError</find>
+      <find>static</find>
+      <find>class</find>
+      <find>sea</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>AttributeError</replace>
+    </replaceStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -112,19 +111,22 @@
         <option value="$PROJECT_DIR$/../test.py" />
         <option value="$PROJECT_DIR$/news/models.py" />
         <option value="$PROJECT_DIR$/templates/news/latest_stories.html" />
-        <option value="$PROJECT_DIR$/news/urls.py" />
         <option value="$PROJECT_DIR$/../dict_check.py" />
+        <option value="$PROJECT_DIR$/NewsApp/settings.py" />
+        <option value="$PROJECT_DIR$/news/urls.py" />
+        <option value="$PROJECT_DIR$/NewsApp/urls.py" />
         <option value="$PROJECT_DIR$/news/views.py" />
-        <option value="$PROJECT_DIR$/templates/news/base_index.html" />
+        <option value="$USER_HOME$/Desktop/childNodes.py" />
         <option value="$PROJECT_DIR$/templates/news/stories.html" />
+        <option value="$PROJECT_DIR$/templates/news/base_index.html" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
-    <option name="width" value="1382" />
-    <option name="height" value="744" />
+    <option name="x" value="-1" />
+    <option name="y" value="27" />
+    <option name="width" value="1368" />
+    <option name="height" value="742" />
   </component>
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="1" id="Add" />
@@ -144,8 +146,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
       <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -210,8 +212,9 @@
   </component>
   <component name="PropertiesComponent">
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../test.py" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
-  <component name="RunManager" selected="Python.dict_check">
+  <component name="RunManager" selected="Python.childNodes">
     <configuration default="false" name="test" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -244,6 +247,29 @@
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../dict_check.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="childNodes" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$USER_HOME$/Desktop" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="NewsApp" />
+      <option name="SCRIPT_NAME" value="$USER_HOME$/Desktop/childNodes.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application">
+      <method />
+    </configuration>
+    <configuration default="true" type="DartTestRunConfigurationType" factoryName="Dart Test">
       <method />
     </configuration>
     <configuration default="true" type="PythonConfigurationType" factoryName="Python">
@@ -380,14 +406,16 @@
       <option name="USE_KEYWORD" value="false" />
       <method />
     </configuration>
-    <list size="2">
+    <list size="3">
       <item index="0" class="java.lang.String" itemvalue="Python.test" />
       <item index="1" class="java.lang.String" itemvalue="Python.dict_check" />
+      <item index="2" class="java.lang.String" itemvalue="Python.childNodes" />
     </list>
     <recent_temporary>
-      <list size="2">
-        <item index="0" class="java.lang.String" itemvalue="Python.dict_check" />
-        <item index="1" class="java.lang.String" itemvalue="Python.test" />
+      <list size="3">
+        <item index="0" class="java.lang.String" itemvalue="Python.childNodes" />
+        <item index="1" class="java.lang.String" itemvalue="Python.dict_check" />
+        <item index="2" class="java.lang.String" itemvalue="Python.test" />
       </list>
     </recent_temporary>
   </component>
@@ -405,17 +433,17 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <frame x="-1" y="27" width="1368" height="742" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24944155" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3284553" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3284553" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -431,109 +459,19 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager />
+    <breakpoint-manager>
+      <option name="time" value="1" />
+    </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/templates/news/base_index.html">
+    <entry file="file://$PROJECT_DIR$/news/urls.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1870">
-          <caret line="110" column="39" lean-forward="true" selection-start-line="110" selection-start-column="39" selection-end-line="110" selection-end-column="39" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/news/home.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://C:/Python27/Lib/site-packages/xmltodict.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="127">
-          <caret line="182" column="4" lean-forward="false" selection-start-line="182" selection-start-column="4" selection-end-line="182" selection-end-column="4" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://C:/Python27/Lib/site-packages/xmljson/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="127">
-          <caret line="121" column="8" lean-forward="false" selection-start-line="121" selection-start-column="8" selection-end-line="121" selection-end-column="8" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/NewsApp/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/news/home.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/news/lates_stories.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="37" lean-forward="true" selection-start-line="14" selection-start-column="37" selection-end-line="14" selection-end-column="37" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../test.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="24" column="32" lean-forward="true" selection-start-line="24" selection-start-column="32" selection-end-line="24" selection-end-column="32" />
+        <state relative-caret-position="75">
+          <caret line="5" column="57" lean-forward="false" selection-start-line="5" selection-start-column="43" selection-end-line="5" selection-end-column="57" />
           <folding>
-            <element signature="e#693#704#0" expanded="false" />
+            <element signature="e#9#41#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/news/latest_stories.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="19" lean-forward="false" selection-start-line="4" selection-start-column="19" selection-end-line="4" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/news/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="14" lean-forward="false" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="14" />
-          <folding>
-            <element signature="e#9#48#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../dict_check.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="74" lean-forward="false" selection-start-line="10" selection-start-column="74" selection-end-line="10" selection-end-column="74" />
-          <folding>
-            <element signature="e#0#11#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../Bank-App/bank/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2172">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -542,34 +480,121 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#19#30#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/news/base_index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="319">
-          <caret line="33" column="25" lean-forward="true" selection-start-line="33" selection-start-column="25" selection-end-line="33" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/news/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="57" lean-forward="false" selection-start-line="5" selection-start-column="43" selection-end-line="5" selection-end-column="57" />
-          <folding>
-            <element signature="e#0#32#0" expanded="true" />
+            <element signature="e#34#51#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/news/stories.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="318">
-          <caret line="71" column="27" lean-forward="false" selection-start-line="71" selection-start-column="27" selection-end-line="71" selection-end-column="27" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/news/base_index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1870">
+          <caret line="110" column="39" lean-forward="true" selection-start-line="110" selection-start-column="39" selection-end-line="110" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/news/home.html" />
+    <entry file="file://C:/Python27/Lib/site-packages/xmltodict.py" />
+    <entry file="file://C:/Python27/Lib/site-packages/xmljson/__init__.py" />
+    <entry file="file://$PROJECT_DIR$/templates/news/home.html" />
+    <entry file="file://$PROJECT_DIR$/templates/news/lates_stories.html" />
+    <entry file="file://$PROJECT_DIR$/../test.py" />
+    <entry file="file://$PROJECT_DIR$/templates/news/latest_stories.html" />
+    <entry file="file://$PROJECT_DIR$/../dict_check.py" />
+    <entry file="file://$PROJECT_DIR$/../Bank-App/bank/views.py" />
+    <entry file="file:///usr/lib/python2.7/urllib2.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/NewsApp/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="435">
+          <caret line="129" column="0" lean-forward="true" selection-start-line="129" selection-start-column="0" selection-end-line="129" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/news/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="10" column="14" lean-forward="false" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/NewsApp/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="28" column="0" lean-forward="false" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
+          <folding>
+            <element signature="e#651#683#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.PyCharmCE2016.3/system/python_stubs/-1247972723/__builtin__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="127">
+          <caret line="2539" column="8" lean-forward="false" selection-start-line="2539" selection-start-column="8" selection-end-line="2539" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/news/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="63" lean-forward="false" selection-start-line="11" selection-start-column="52" selection-end-line="11" selection-end-column="63" />
+          <folding>
+            <element signature="e#9#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Desktop/childNodes.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="7" lean-forward="false" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/news/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="137" column="24" lean-forward="true" selection-start-line="137" selection-start-column="24" selection-end-line="137" selection-end-column="24" />
+          <folding>
+            <element signature="e#34#51#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/news/stories.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="750">
+          <caret line="50" column="56" lean-forward="false" selection-start-line="50" selection-start-column="56" selection-end-line="50" selection-end-column="56" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/news/base_index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="45" column="25" lean-forward="false" selection-start-line="45" selection-start-column="25" selection-end-line="45" selection-end-column="25" />
+          <folding>
+            <element signature="n#style#0;n#img#0;n#a#0;n#div#0;n#div#0;n#nav#0;n#header#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

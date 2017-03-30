@@ -1,10 +1,7 @@
 # standard library
-import json
-import urllib2
-import xmltodict
 
 # third-party
-from bs4 import BeautifulSoup
+import feedparser
 
 # Django
 from django.shortcuts import render
@@ -12,19 +9,12 @@ from django.shortcuts import render
 # local Django
 
 
-def convert_to_json(xml_str, xml_attribs=True):
-    d = xmltodict.parse(xml_str, xml_attribs=xml_attribs)
-    return json.dumps(d, indent=4)
-
-
 def latest_stories(request):
-    data_file = urllib2.urlopen('http://feeds.feedburner.com/ndtvnews-latest')
-    soup = BeautifulSoup(data_file, 'xml')
-    json_data = json.loads(convert_to_json(str(soup)))
-
     try:
-        news_list = json_data['rss']['channel']['item']
-    except KeyError:
+        news_list = feedparser.parse(
+            'http://feeds.feedburner.com/ndtvnews-latest'
+        )
+    except AttributeError:
         news_list = None
     finally:
         context = {
@@ -35,13 +25,11 @@ def latest_stories(request):
 
 
 def top_stories(request):
-    data_file = urllib2.urlopen('http://feeds.feedburner.com/ndtvnews-top-stories')
-    soup = BeautifulSoup(data_file, 'xml')
-    json_data = json.loads(convert_to_json(str(soup)))
-
     try:
-        news_list = json_data['rss']['channel']['item']
-    except KeyError:
+        news_list = feedparser.parse(
+            'http://feeds.feedburner.com/ndtvnews-top-stories'
+        )
+    except AttributeError:
         news_list = None
     finally:
         context = {
@@ -52,13 +40,11 @@ def top_stories(request):
 
 
 def india(request):
-    data_file = urllib2.urlopen('http://feeds.feedburner.com/ndtvnews-india-news')
-    soup = BeautifulSoup(data_file, 'xml')
-    json_data = json.loads(convert_to_json(str(soup)))
-
     try:
-        news_list = json_data['rss']['channel']['item']
-    except KeyError:
+        news_list = feedparser.parse(
+            'http://feeds.feedburner.com/ndtvnews-india-news'
+        )
+    except AttributeError:
         news_list = None
     finally:
         context = {
@@ -69,13 +55,11 @@ def india(request):
 
 
 def world(request):
-    data_file = urllib2.urlopen('http://feeds.feedburner.com/ndtvnews-world-news')
-    soup = BeautifulSoup(data_file, 'xml')
-    json_data = json.loads(convert_to_json(str(soup)))
-
     try:
-        news_list = json_data['rss']['channel']['item']
-    except KeyError:
+        news_list = feedparser.parse(
+            'http://feeds.feedburner.com/ndtvnews-world-news'
+        )
+    except AttributeError:
         news_list = None
     finally:
         context = {
@@ -86,12 +70,11 @@ def world(request):
 
 
 def business(request):
-    data_file = urllib2.urlopen('http://feeds.feedburner.com/ndtvprofit-latest')
-    soup = BeautifulSoup(data_file, 'xml')
-    json_data = json.loads(convert_to_json(str(soup)))
     try:
-        news_list = json_data['rss']['channel']['item']
-    except KeyError:
+        news_list = feedparser.parse(
+            'http://feeds.feedburner.com/ndtvprofit-latest'
+        )
+    except AttributeError:
         news_list = None
     finally:
         context = {
@@ -102,13 +85,11 @@ def business(request):
 
 
 def cricket(request):
-    data_file = urllib2.urlopen('http://feeds.feedburner.com/ndtvsports-cricket')
-    soup = BeautifulSoup(data_file, 'xml')
-    json_data = json.loads(convert_to_json(str(soup)))
-
     try:
-        news_list = json_data['rss']['channel']['item']
-    except KeyError:
+        news_list = feedparser.parse(
+            'http://feeds.feedburner.com/ndtvsports-cricket'
+        )
+    except AttributeError:
         news_list = None
     finally:
         context = {
@@ -119,13 +100,11 @@ def cricket(request):
 
 
 def sports(request):
-    data_file = urllib2.urlopen('http://feeds.feedburner.com/ndtvsports-latest')
-    soup = BeautifulSoup(data_file, 'xml')
-    json_data = json.loads(convert_to_json(str(soup)))
-
     try:
-        news_list = json_data['rss']['channel']['item']
-    except KeyError:
+        news_list = feedparser.parse(
+            'http://feeds.feedburner.com/ndtvsports-latest'
+        )
+    except AttributeError:
         news_list = None
     finally:
         context = {
@@ -136,13 +115,11 @@ def sports(request):
 
 
 def tech(request):
-    data_file = urllib2.urlopen('http://feeds.feedburner.com/gadgets360-latest')
-    soup = BeautifulSoup(data_file, 'xml')
-    json_data = json.loads(convert_to_json(str(soup)))
-
     try:
-        news_list = json_data['rss']['channel']['item']
-    except KeyError:
+        news_list = feedparser.parse(
+            'http://feeds.feedburner.com/gadgets360-latest'
+        )
+    except AttributeError:
         news_list = None
     finally:
         context = {
@@ -153,13 +130,11 @@ def tech(request):
 
 
 def movies(request):
-    data_file = urllib2.urlopen('http://feeds.feedburner.com/ndtvmovies-latest')
-    soup = BeautifulSoup(data_file, 'xml')
-    json_data = json.loads(convert_to_json(str(soup)))
-
     try:
-        news_list = json_data['rss']['channel']['item']
-    except KeyError:
+        news_list = feedparser.parse(
+            'http://feeds.feedburner.com/ndtvmovies-latest'
+        )
+    except AttributeError:
         news_list = None
     finally:
         context = {
@@ -170,13 +145,11 @@ def movies(request):
 
 
 def auto(request):
-    data_file = urllib2.urlopen('http://feeds.feedburner.com/carandbike-latest')
-    soup = BeautifulSoup(data_file, 'xml')
-    json_data = json.loads(convert_to_json(str(soup)))
-
     try:
-        news_list = json_data['rss']['channel']['item']
-    except KeyError:
+        news_list = feedparser.parse(
+            'http://feeds.feedburner.com/carandbike-latest'
+        )
+    except AttributeError:
         news_list = None
     finally:
         context = {
