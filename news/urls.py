@@ -8,7 +8,8 @@ from . import views
 
 
 urlpatterns = [
-    url(r'^$', views.latest_stories, name='latest_stories'),
+    url(r'^$', views.home, name='home'),
+    url(r'^latest-stories$', views.latest_stories, name='latest_stories'),
     url(r'^top-stories/$', views.top_stories, name='top_stories'),
     url(r'^india/$', views.india, name='india'),
     url(r'^world/$', views.world, name='world'),
