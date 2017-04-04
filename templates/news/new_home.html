@@ -1,4 +1,6 @@
 <!DOCTYPE html>
+{% load extras %}
+{% load staticfiles %}
 <html>
     <head>
         <meta charset="utf-8">
@@ -6,6 +8,11 @@
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="{% static 'css/owl.carousel.css' %}">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/owl.carousel.min.js"></script>
+
         <style>
             .navbar-side {
                 background: #000000;
@@ -24,10 +31,18 @@
                 color: #00000f;
                 margin: 8px;
                 padding: 10px;
+                text-transform: uppercase;
+                font-family: "Open Sans Extrabold", sans-serif;
             }
             .navbar-side .navbar-nav>li>a{
                 margin-top: 15px;
                 margin-left: 15px;
+                text-transform: uppercase;
+                font-family: "Open Sans Extrabold", sans-serif;
+            }
+            .navbar-top .navbar-nav>li>a:hover{
+                text-decoration: none;
+                background-color: #eee;
             }
             .container{
                 height: ingerit;
@@ -39,68 +54,58 @@
                 padding: 0px;
             }
             .card {
-                box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
-            }
-
-            .card {
-                background: #a56fa5;
-                margin-top: 10px;
+                background: white;
+                margin: 5px 0px 5px 0px;
                 box-sizing: border-box;
                 border-radius: 2px;
                 background-clip: padding-box;
+                heigth: 126px;
+                box-shadow: rgba(0,0,0,0.2) 0 2px 6px 0;
             }
-            .card span.card-title {
-                color: #fff;
-                font-size: 24px;
-                font-weight: 300;
-                text-transform: uppercase;
+            .card:hover{
+                z-index:1000;
+                box-shadow:rgba(0, 0, 0, 0.2) 0 16px 16px 0;
+                -webkit-box-shadow:rgba(0, 0, 0, 0.2) 0 16px 16px 0;
+                -moz-box-shadow:rgba(0, 0, 0, 0.2) 0 16px 16px 0;
             }
-            .card .card-image {
-                position: relative;
-                overflow: hidden;
+            .col-sm-3{
+                width: 23%;
+                padding: 0px;
             }
-            .card .card-image img {
-                border-radius: 2px 2px 0 0;
-                background-clip: padding-box;
-                position: relative;
-                z-index: -1;
+            .card .col-sm-9{
+                padding: 6px 0px 0px 0px;
             }
-            .card .card-image span.card-title {
-                position: absolute;
-                bottom: 0;
-                left: 0;
-                padding: 16px;
+            .col-sm-7, .col-sm-9{
+                padding: 0px;
             }
-            .card .card-content {
-                padding: 16px;
-                border-radius: 0 0 2px 2px;
-                background-clip: padding-box;
-                box-sizing: border-box;
+            .card-img-div{
+                width: 168px;
             }
-            .card .card-content p {
-                margin: 0;
-                color: inherit;
+            .card-img{
+                height: 126px;
+                width: 168px;
             }
-            .card .card-content span.card-title {
-                line-height: 48px;
+            .row{
+                margin: 0px;
             }
-            .card .card-action {
-                border-top: 1px solid rgba(160, 160, 160, 0.2);
-                padding: 16px;
+            .card-time{
+                color: #8a8282;
             }
-            .card .card-action a {
-                color: #ffab40;
-                margin-right: 16px;
-                transition: color 0.3s ease;
-                text-transform: uppercase;
+            .card-title{
+                color: #000000;
+                font-family: 'Roboto',sans-serif;
+                font-weight: 400;
             }
-            .card .card-action a:hover {
-                color: #ffd8a6;
-                text-decoration: none;
+            .card-content{
+                color: #000000;
+            }
+            .carousel-inner > .item > .row{
+                width: 70%;
+                margin: auto;
             }
         </style>
     </head>
-    <body style="background:#EEEEEE;font:Roboto,Helvetica,Arial,sans-serif">
+    <body style="background:#EEEEEE">
         <div class="col-sm-12">
             <div class="col-sm-1">
                 <div class="navbar navbar-side">
@@ -117,26 +122,54 @@
                 <div class="container" style="background:#EEEEEE">
                     <div class="navbar navbar-top">
                         <ul class="nav navbar-nav navbar-center">
-                            <li><a href="">Top Stories</a></li>
-                            <li><a href="">India</a></li>
-                            <li><a href="">World</a></li>
-                            <li><a href="">Business</a></li>
-                            <li><a href="">Sports</a></li>
-                            <li><a href="">Tech</a></li>
+                            <li><a href="{% url 'top_stories' %}">Top Stories</a></li>
+                            <li><a href="{% url 'india' %}">India</a></li>
+                            <li><a href="{% url 'world' %}">World</a></li>
+                            <li><a href="{% url 'business' %}">Business</a></li>
+                            <li><a href="{% url 'cricket' %}">Cricket</a></li>
+                            <li><a href="{% url 'tech' %}">Tech</a></li>
                         </ul>
                     </div>
-                    <div class="row">
-                        <!-- Card Projects -->
-                        <div class="col-sm-7">
-                            <div class="card">
-                                <div class="col-sm-2">
-                                    <img class="img-responsive" src="http://material-design.storage.googleapis.com/publish/v_2/material_ext_publish/0Bx4BSt6jniD7TDlCYzRROE84YWM/materialdesign_introduction.png">
-                                </div>
-                                <div class="col-sm-5">
-                                    <span class="card-title">Material Cards</span>
-                                    <p>Cards for display in portfolio style material design by Google.</p>
+                    <div class="container">
+                        <br>
+                        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                            <!-- Indicators -->
+                            <ol class="carousel-indicators">
+                                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                                <li data-target="#myCarousel" data-slide-to="1"></li>
+                                <li data-target="#myCarousel" data-slide-to="2"></li>
+                                <li data-target="#myCarousel" data-slide-to="3"></li>
+                            </ol>
+                            <!-- Wrapper for slides -->
+                            <div class="carousel-inner" role="listbox">
+                                <div class="item">
+                                    {% if news_list %}
+                                        {% for news in news_list|return_item_list %}
+                                            <div class="row">
+                                                <!-- Card Projects -->
+                                                <a href="{{ news.link }}" target="_blank">
+                                                    <div class="col-sm-9 card">
+                                                        <div class="col-sm-3">
+                                                            <img class="img-responsive card-img" src="{{ news.storyimage }}">
+                                                        </div>
+                                                        <div class="col-sm-9">
+                                                            <div class="row card-time">{{ news.updatedat }}</div>
+                                                            <div class="row card-title"><h4>{{ news.title }}</h4></div>
+                                                            <div class="row card-content">{{ news.summary }}</div>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        {% endfor %}
+                                    {% else %}
+                                        <p>Nothing</p>
+                                    {% endif %}
                                 </div>
                             </div>
+                            <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+                                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                                <span class="sr-only">Next</span>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -153,5 +186,16 @@
                 </div>
             </div>
         </div>
+        <script type="text/javascript">
+            <!--$(document).ready(function () {-->
+                <!--$("#owl-demo").owlCarousel({-->
+                    <!--autoPlay: 3000, //Set AutoPlay to 3 seconds-->
+                    <!--dots: true,-->
+                    <!--items: 2,-->
+                    <!--itemsDesktop: [1199, 3],-->
+                    <!--itemsDesktopSmall: [979, 3]-->
+                <!--});-->
+            <!--});-->
+        </script>
     </body>
 </html>

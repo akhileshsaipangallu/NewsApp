@@ -16,7 +16,7 @@ def return_item(l, i):
 @register.filter
 def return_item_list(l):
     try:
-        return l[0].entries
+        return l.entries
     except:
         return None
 
