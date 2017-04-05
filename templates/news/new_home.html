@@ -8,68 +8,83 @@
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
         <link rel="stylesheet" type="text/css" href="{% static 'css/owl.carousel.css' %}">
         <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/owl.carousel.min.js"></script>
-
         <style>
             .navbar-side {
-                background: #000000;
+                background: white;
                 border-radius: 0;
                 height: 100%;
                 width: inherit;
                 position: fixed;
+                z-index: 2;
+                border: 0px;
+                margin: 15px 0px 15px 0px;
             }
             .navbar-top {
-                background: white;
+                background: #2856B6;
                 border-radius: 2px;
+                margin: 0px;
                 border: 0px;
                 box-shadow: rgba(0,0,0,0.2) 0 2px 6px 0;
+                color: white;
+            }
+            .navbar-brand{
+                line-height: 20px;
+                color: white;
+                text-decoration: none;
+            }
+            .navbar-brand:focus, .navbar-brand:hover{
+                background-color: #4E74C6;
+                color: white;
+            }
+            .navbar-right{
+                margin: 0px;
             }
             .navbar-top .navbar-nav>li>a{
-                color: #00000f;
+                color: white;
                 margin: 8px;
                 padding: 10px;
                 text-transform: uppercase;
-                font-family: "Open Sans Extrabold", sans-serif;
+                font-family: Roboto,Helvetica Neue,Helvetica,Arial,sans-serif;
             }
-            .navbar-side .navbar-nav>li>a{
-                margin-top: 15px;
-                margin-left: 15px;
-                text-transform: uppercase;
-                font-family: "Open Sans Extrabold", sans-serif;
-            }
-            .navbar-top .navbar-nav>li>a:hover{
-                text-decoration: none;
-                background-color: #eee;
+            .navbar-nav>li>a:focus, .navbar-nav>li>a:hover{
+                background-color: #4E74C6;
             }
             .container{
-                height: ingerit;
-                width: 1138.330px;
                 margin: 0px;
-                padding: 15px;
+                padding: 15px 15px 0px 15px;
+                width: 100%;
+            }
+            .col-sm-10 .container{
+                padding: 15px 15px 0px 15px;
             }
             .col-sm-1, .col-sm-10, .col-sm-12 {
                 padding: 0px;
             }
+            .small-container{
+                background: #EBEFF1;
+            }
             .card {
+                height: auto;
                 background: white;
-                margin: 5px 0px 5px 0px;
-                box-sizing: border-box;
-                border-radius: 2px;
-                background-clip: padding-box;
-                heigth: 126px;
-                box-shadow: rgba(0,0,0,0.2) 0 2px 6px 0;
+                margin: 0px 15px 17px 15px;
+                display: block;
+                border-radius: 4px;
+                background-clip: padding-box;all .15s ease-in-out;
+                box-shadow: 0 1px 1px rgba(0,0,0,.1);
+                overflow: hidden;
             }
             .card:hover{
-                z-index:1000;
-                box-shadow:rgba(0, 0, 0, 0.2) 0 16px 16px 0;
-                -webkit-box-shadow:rgba(0, 0, 0, 0.2) 0 16px 16px 0;
-                -moz-box-shadow:rgba(0, 0, 0, 0.2) 0 16px 16px 0;
+                z-index:1;
+                box-shadow: 0 4px 20px 0 rgba(168,182,191,.6);
+            }
+            .news-container{
+                background:#EBEFF1;
             }
             .col-sm-3{
-                width: 23%;
+                width: 19%;
                 padding: 0px;
             }
             .card .col-sm-9{
@@ -78,124 +93,123 @@
             .col-sm-7, .col-sm-9{
                 padding: 0px;
             }
-            .card-img-div{
-                width: 168px;
-            }
             .card-img{
-                height: 126px;
-                width: 168px;
+                height: 184.71075px;
+                width: 246.281px;
+                border-top-left-radius: 4px;
+                border-top-right-radius: 4px;
             }
             .row{
+                line-height: 15px;
                 margin: 0px;
             }
-            .card-time{
-                color: #8a8282;
-            }
-            .card-title{
-                color: #000000;
-                font-family: 'Roboto',sans-serif;
-                font-weight: 400;
+            .card-info{
+                padding: 15px;
             }
             .card-content{
-                color: #000000;
+                margin: 0;
+                font-size: 15px;
+                display: block;
+                line-height: 22px;
+                padding-right: 5px;
+                font-weight: 500;
+                color: #3b4a51;
+                font-family: Roboto,Helvetica Neue,Helvetica,Arial,sans-serif;
             }
-            .carousel-inner > .item > .row{
-                width: 70%;
-                margin: auto;
+            .card-title{
+                margin: 0;
+                font-size: 20px;
+                display: block;
+                line-height: 22px;
+                padding-right: 5px;
+                font-weight: 500;
+                color: #3b4a51;
+                font-family: Roboto,Helvetica Neue,Helvetica,Arial,sans-serif;
+            }
+            .card-time{
+                text-overflow: ellipsis;
+                overflow: hidden;
+                white-space: nowrap;
+                color: rgba(76,87,102,.5);
+            }
+            #container {
+                <!--width: 300px;-->
+                margin: 0px;
+            }
+            #myContent {
+                -moz-column-count: 1;
+                <!-- -moz-column-gap: 15px;-->
+                -webkit-column-count: 1;
+                -webkit-column-gap: 15px;
+                column-count: 1;
+                <!--column-gap: 15px;-->
+                <!--width: 800px;-->
+                padding: 0px;
+                margin: 0px;
+            }
+            #myContent a {
+                display: inline-block;
+                margin-bottom: 0px;
+                width:auto;
+            }
+            #myContent li:nth-child(n+1):nth-child(-n+4) {
+                text-align:right;
+            }
+            #myContent li:nth-child(n+5):nth-child(-n+6) {
+                text-align:left;
             }
         </style>
     </head>
-    <body style="background:#EEEEEE">
+    <body style="background:#EBEFF1;">
+    <div class="navbar navbar-top">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="">News From Everywhere</a>
+        </div>
+        <ul class="nav navbar-nav navbar-right">
+            <li><a href="{% url 'latest_stories' %}">Latest Stories</a></li>
+            <li><a href="{% url 'top_stories' %}">Top Stories</a></li>
+            <li><a href="{% url 'india' %}">India</a></li>
+            <li><a href="{% url 'world' %}">World</a></li>
+            <li><a href="{% url 'business' %}">Business</a></li>
+            <li><a href="{% url 'cricket' %}">Cricket</a></li>
+            <li><a href="{% url 'tech' %}">Tech</a></li>
+        </ul>
+    </div>
+    <div class="container">
         <div class="col-sm-12">
-            <div class="col-sm-1">
-                <div class="navbar navbar-side">
-                    <ul class="nav navbar-nav">
-                        <li><a href="">Link1</a></li>
-                        <li><a href="">Link2</a></li>
-                        <li><a href="">Link3</a></li>
-                        <li><a href="">Link4</a></li>
-                        <li><a href="">Link5</a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="col-sm-10">
-                <div class="container" style="background:#EEEEEE">
-                    <div class="navbar navbar-top">
-                        <ul class="nav navbar-nav navbar-center">
-                            <li><a href="{% url 'top_stories' %}">Top Stories</a></li>
-                            <li><a href="{% url 'india' %}">India</a></li>
-                            <li><a href="{% url 'world' %}">World</a></li>
-                            <li><a href="{% url 'business' %}">Business</a></li>
-                            <li><a href="{% url 'cricket' %}">Cricket</a></li>
-                            <li><a href="{% url 'tech' %}">Tech</a></li>
-                        </ul>
-                    </div>
-                    <div class="container">
-                        <br>
-                        <div id="myCarousel" class="carousel slide" data-ride="carousel">
-                            <!-- Indicators -->
-                            <ol class="carousel-indicators">
-                                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-                                <li data-target="#myCarousel" data-slide-to="1"></li>
-                                <li data-target="#myCarousel" data-slide-to="2"></li>
-                                <li data-target="#myCarousel" data-slide-to="3"></li>
-                            </ol>
-                            <!-- Wrapper for slides -->
-                            <div class="carousel-inner" role="listbox">
-                                <div class="item">
-                                    {% if news_list %}
-                                        {% for news in news_list|return_item_list %}
-                                            <div class="row">
-                                                <!-- Card Projects -->
-                                                <a href="{{ news.link }}" target="_blank">
-                                                    <div class="col-sm-9 card">
-                                                        <div class="col-sm-3">
-                                                            <img class="img-responsive card-img" src="{{ news.storyimage }}">
-                                                        </div>
-                                                        <div class="col-sm-9">
-                                                            <div class="row card-time">{{ news.updatedat }}</div>
-                                                            <div class="row card-title"><h4>{{ news.title }}</h4></div>
-                                                            <div class="row card-content">{{ news.summary }}</div>
-                                                        </div>
-                                                    </div>
-                                                </a>
-                                            </div>
-                                        {% endfor %}
-                                    {% else %}
-                                        <p>Nothing</p>
-                                    {% endif %}
+            <div class="container"">
+                <div id="container">
+                <ul id="myContent">
+                    <li>
+                    {% if news_list %}
+                    {% for news in news_list|return_item_list %}
+                        <a href="{{ news.link }}" target="_blank">
+                            <div class="col-sm-3 card" style="width:246px">
+                                <div class="row card-img">
+                                    <img class="img-responsive card-img" src="{{ news.storyimage }}">
+                                </div>
+                                <div class="card-info">
+                                    <div class="row card-title">{{ news.title }}</div>
+                                    <p><div class="row card-time">{{ news.updatedat }}</div></p>
+                                    <p><div class="row card-content">{{ news.summary }}</div></p>
                                 </div>
                             </div>
-                            <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
-                                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-                                <span class="sr-only">Next</span>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-1">
-                <div class="navbar navbar-side">
-                    <ul class="nav navbar-nav">
-                        <li><a href="">Link1</a></li>
-                        <li><a href="">Link2</a></li>
-                        <li><a href="">Link3</a></li>
-                        <li><a href="">Link4</a></li>
-                        <li><a href="">Link5</a></li>
-                    </ul>
+                        </a>
+                    {% endfor %}
+                    {% else %}
+                        <p>Nothing</p>
+                    {% endif %}
+                    </li>
+                </ul>
                 </div>
             </div>
         </div>
-        <script type="text/javascript">
-            <!--$(document).ready(function () {-->
-                <!--$("#owl-demo").owlCarousel({-->
-                    <!--autoPlay: 3000, //Set AutoPlay to 3 seconds-->
-                    <!--dots: true,-->
-                    <!--items: 2,-->
-                    <!--itemsDesktop: [1199, 3],-->
-                    <!--itemsDesktopSmall: [979, 3]-->
-                <!--});-->
-            <!--});-->
-        </script>
+    </body>
+    <script type="text/javascript">
+        $("#myContent li img").each(function (i, el) {
+            this.height = Math.min(this.height, 1 + Math.floor(Math.random() * this.height * 2));
+            this.width = Math.min(this.height, 1 + Math.floor(Math.random() * this.width * 2))
+        });
+    </script>
     </body>
 </html>
