@@ -9,41 +9,6 @@ from django.shortcuts import render
 # local Django
 
 
-# def home(request):
-#     try:
-#         news_list = []
-#         news_list_top_stories = feedparser.parse(
-#             'http://feeds.feedburner.com/ndtvnews-top-stories'
-#         )
-#         news_list.append([news_list_top_stories, 'Top Stories'])
-#         news_list_world = feedparser.parse(
-#             'http://feeds.feedburner.com/ndtvnews-world-news'
-#         )
-#         news_list.append([news_list_world, 'World'])
-#         news_list_business = feedparser.parse(
-#             'http://feeds.feedburner.com/ndtvprofit-latest'
-#         )
-#         news_list.append([news_list_business, 'Business'])
-#         news_list_cricket = feedparser.parse(
-#             'http://feeds.feedburner.com/ndtvsports-cricket'
-#         )
-#         news_list.append([news_list_cricket, 'Cricket'])
-#         news_list_tech = feedparser.parse(
-#             'http://feeds.feedburner.com/gadgets360-latest'
-#         )
-#         news_list.append([news_list_tech, 'Tech'])
-#
-#     except AttributeError:
-#         news_list = None
-#
-#     context = {
-#         'news_list': news_list,
-#         'title': 'News From Everywhere',
-#     }
-#
-#     return render(request, 'news/home.html', context)
-
-
 def latest_stories(request):
     try:
         news_list = feedparser.parse(

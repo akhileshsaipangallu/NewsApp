@@ -13,19 +13,19 @@
 </head>
 
 <body style="background:#EBEFF1;">
-    <button onclick="topFunction()" id="myBtn" type="button" class="btn btn-default btn-circle btn-xl"><span class="glyphicon glyphicon-chevron-up"></span></button>
+    <button id="myBtn" type="button" class="btn btn-default btn-circle btn-xl scroll-top"><span class="glyphicon glyphicon-chevron-up"></span></button>
     <div class="navbar navbar-top">
         <div class="navbar-header">
-            <a class="navbar-brand" href="">News From Everywhere</a>
+            <a class="navbar-brand" href="{% url 'latest_stories' %}">News From Everywhere</a>
         </div>
         <ul class="nav navbar-nav navbar-right" id="nav">
-            <li><a href="{% url 'latest_stories' %}">Latest Stories</a></li>
-            <li><a href="{% url 'top_stories' %}">Top Stories</a></li>
-            <li><a href="{% url 'india' %}">India</a></li>
-            <li><a href="{% url 'world' %}">World</a></li>
-            <li><a href="{% url 'business' %}">Business</a></li>
-            <li><a href="{% url 'cricket' %}">Cricket</a></li>
-            <li><a href="{% url 'tech' %}">Tech</a></li>
+            <li><a href="{% url 'latest_stories' %}" class="">Latest Stories</a></li>
+            <li><a href="{% url 'top_stories' %}" class="">Top Stories</a></li>
+            <li><a href="{% url 'india' %}" class="">India</a></li>
+            <li><a href="{% url 'world' %}" class="">World</a></li>
+            <li><a href="{% url 'business' %}" class="">Business</a></li>
+            <li><a href="{% url 'cricket' %}" class="">Cricket</a></li>
+            <li><a href="{% url 'tech' %}" class="">Tech</a></li>
         </ul>
     </div>
     <div class="container">
@@ -70,9 +70,33 @@
             }
         }
         function topFunction() {
+            while (document.body.scrollTop!= 0){
+                document.documentElement.scrollTop -= 1;
+                setTimeout(function(){
+                    console.log("THIS IS");
+                }, 2000);
+                console.log(document.body.scrollTop);
+            }
             document.body.scrollTop = 0;
-            document.documentElement.scrollTop = 0;
         }
+
+        $(".scroll-top").on("click", function(e){
+           e.preventDefault();
+           $("html, body").animate({scrollTop:"0"},400);
+        });
+
+        function colorFunction() {
+            var ul = document.getElementById("nav");
+            var items = ul.getElementsByTagName("li");
+
+            for (var i = 0; i < items.length; ++i) {
+                if(items[i].children[0].innerHTML == "{{ title }}"){
+                    items[i].children[0].className = "active";
+                    break;
+                }
+            }
+        }
+        window.onload = colorFunction;
     </script>
     </body>
 </html>
