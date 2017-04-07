@@ -18,21 +18,14 @@
         <div class="navbar-header">
             <a class="navbar-brand" href="">News From Everywhere</a>
         </div>
-        <ul class="nav navbar-nav navbar-right">
-            <li><a href="{% url 'latest_stories' %}">Latest Stories</a>
-            </li>
-            <li><a href="{% url 'top_stories' %}">Top Stories</a>
-            </li>
-            <li><a href="{% url 'india' %}">India</a>
-            </li>
-            <li><a href="{% url 'world' %}">World</a>
-            </li>
-            <li><a href="{% url 'business' %}">Business</a>
-            </li>
-            <li><a href="{% url 'cricket' %}">Cricket</a>
-            </li>
-            <li><a href="{% url 'tech' %}">Tech</a>
-            </li>
+        <ul class="nav navbar-nav navbar-right" id="nav">
+            <li><a href="{% url 'latest_stories' %}">Latest Stories</a></li>
+            <li><a href="{% url 'top_stories' %}">Top Stories</a></li>
+            <li><a href="{% url 'india' %}">India</a></li>
+            <li><a href="{% url 'world' %}">World</a></li>
+            <li><a href="{% url 'business' %}">Business</a></li>
+            <li><a href="{% url 'cricket' %}">Cricket</a></li>
+            <li><a href="{% url 'tech' %}">Tech</a></li>
         </ul>
     </div>
     <div class="container">
@@ -66,7 +59,7 @@
         $('.grid').masonry({
             // options
             itemSelector: '.grid-item',
-            columnWidth: 150
+            columnWidth: 140
         });
         window.onscroll = function() {scrollFunction()};
         function scrollFunction() {
