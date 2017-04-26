@@ -12,12 +12,9 @@ def return_item(l, i):
         return None
 
 
-
 @register.filter
 def return_item_list(l):
     try:
         return l.entries
     except:
         return None
-
-

@@ -1,290 +1,102 @@
-<!DOCTYPE html>
-{% load extras %}
-<html lang="en">
+<!DOCTYPE html> {% load extras %} {% load staticfiles %}
+<html>
 
-    <head>
-        <title>{{ title }}</title>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <link rel="stylesheet" href="{% static 'css/home.css' %}">
+    <script src="{% static 'js/masonry.pkgd.min.js' %}"></script>
+</head>
 
-        <style>
-
-            footer {
-                background-color: #555;
-                color: white;
-                padding: 15px;
-            }
-            .navbar_new{
-                background: #5CC7B2;
-                border-radius: 0px;
-                padding: 8px 15px 8px 15px;
-                border: 0px;
-            }
-            .navbar-default .navbar-nav>li>a{
-                color: #fcfcfc;
-                font-family: Lato,Helvetica Neue,Helvetica,Arial,sans-serif;
-                letter-spacing: 1px;
-                font-weight: 50px;
-            }
-            .navbar-default .navbar-brand-new{
-                font-family: Raleway;
-                font-size: 30px;
-                font-weight: 300;
-                color: #fcfcfc;
-            }
-            .navbar-default .navbar-brand-new:focus, .navbar-default .navbar-brand-new:hover{
-                background-color: #7ed2c1;
-                color: #fcfcfc;
-            }
-            .navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover{
-                background-color: #7ed2c1;
-                color: #fcfcfc;
-            }
-            .nav>li, .nav>li>a{
-                display: block;
-                text-align: webkit-match-parent;
-            }
-            .nabar-left-new{
-                padding: 8px 15px 8px 15px;
-                height: 50px;
-                color: #fcfcfc;
-            }
-            body {
-                font-family: "Lato", sans-serif;
-                transition: background-color .5s;
-            }
-            .sidenav {
-                <!--margin-top: 66px;-->
-                height: 100%;
-                width: 0;
-                position: fixed;
-                z-index: 1;
-                top: 0;
-                left: 0;
-                background-color: #5CC7B2;
-                overflow-x: hidden;
-                transition: 0.5s;
-            }
-            .sidenav a {
-                padding: 8px 8px 8px 40px;
-                font-family: Lato,Helvetica Neue,Helvetica,Arial,sans-serif;
-                text-decoration: none;
-                font-size: 18px;
-                letter-spacing: 1px;
-                color: #fcfcfc;
-                display: block;
-                transition: 0.3s
-            }
-            .sidenav a:hover, .offcanvas a:focus{
-                background-color: #7ed2c1;
-                color: #fcfcfc;
-            }
-            #main {
-                transition: margin-left .5s;
-                padding: 16px;
-            }
-            @media screen and (max-height: 450px) {
-            }
-            .closebtn{
-                color: #fcfcfc;
-                padding: 15px 40px 14px 0px;
-                float: right
-            }
-            .row-new{
-                height: 66px;
-            }
-            .container-new{
-                padding: 0px;
-            }
-            .col-sm-7-new{
-                <!--heigth: 533.188px;-->
-                <!--width: 847.5px;-->
-                background-color: #7ed2c1;
-            }
-            .category-layout {
-                padding: 15px 0px 15px 0px;
-                background: #fff;
-                margin-bottom: 30px;
-            }
-            .item-caregory {
-                text-align: left !important;
-                padding: 0px 15px 5px 0px;
-                display: inline-block;
-            }
-            .category-layout .item-caregory a{
-                color: #2c9480;
-                text-transform: uppercase;
-                letter-spacing: 1px;
-                text-decoration: none;
-            }
-            hr{
-                height: 1px;
-                border-top: 2px solid #EBEBEB;
-                margin: 0px;
-                padding: 0px 0px 25px 0px;
-            }
-            .img-responsive{
-                display: block;
-                max-width: 100%;
-                height: auto;
-            }
-            .feature-news-item-title{
-                position: absolute;
-                bottom: 0;
-                left: 10%;
-                right: 10%;
-                padding: 25px 0px 0;
-            }
-            .feature-news-item-title a{
-                letter-spacing: 1px;
-                text-decoration: none;
-                color: #fcfcfc;
-                font-size: 38px;
-                font-family: "Open Sans Extrabold", sans-serif;
-                font-weight: 500;
-            }
-            .media-wrapper{
-                padding-right: 30px;
-                min-width: 103px;
-            }
-            .media{
-                padding-top: 0px;
-                border-top: 0;
-            }
-            .media-left{
-                padding-right: 15px;
-            }
-            .media h3.media-heading{
-                font-size: 15px;
-                font-weight: 500;
-                margin-top: 0;
-                margin-bottom: 5px;
-            }
-            .media-heading a:focus, a:hover {
-                color: #5CC7B2;
-                text-decoration: none;
-            }
-            .sidenav .row{
-                <!--text-transform: uppercase;-->
-            }
-            .feature-news-item-img{
-                filter: blur(1px);
-            }
-
-        </style>
-
-    </head>
-
-    <body>
-        <header>
-            <nav class="navbar navbar-default navbar_new">
-                <div id="navbar-button" class="nav navbar-nav nabar-left nabar-left-new" style="font-size:30px;cursor:pointer" onclick="toggleNav()">&#9776;</div>
-                <div class="container">
-                    <div id="top-navbar" class="navbar-header">
-                        <a class="navbar-brand navbar-brand-new" href="">
-                            News From Everywhere
-                        </a>
-                    </div>
-                    <div id="top-navbar-right-items">
-                        <div class="navbar-collapse collapse" aria-expanded="true" role="banner">
-                        <ul class="nav navbar-nav navbar-right">
-                            <li><a href="">NEWS SOURCES</a></li>
-                        </ul>
-                    </div>
-                    </div>
-
-                </div>
-            </nav>
-        </header>
-
-        <div id="mySidenav" class="sidenav com-sm-2">
-            <div class="row"><a href="{% url 'latest_stories' %}">Latest Stories</a></div>
-            <div class="row"><a href="#">Top Stories</a></div>
-            <div class="row"><a href="#">India</a></div>
-            <div class="row"><a href="#">World</a></div>
-            <div class="row"><a href="#">Business</a></div>
-            <div class="row"><a href="#">Cricket</a></div>
-            <div class="row"><a href="#">Sports</a></div>
-            <div class="row"><a href="#">Tech</a></div>
-            <div class="row"><a href="#">Movies</a></div>
-            <div class="row"><a href="#">Auto</a></div>
+<body style="background:#EBEFF1;">
+    <button id="myBtn" type="button" class="btn btn-default btn-circle btn-xl scroll-top"><span class="glyphicon glyphicon-chevron-up"></span></button>
+    <div class="navbar navbar-top">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="{% url 'latest_stories' %}">News From Everywhere</a>
         </div>
-
-        <div class="com-sm-12">
-            <div class="container container-new">
-                <div class="row">
-                    <div class="col-sm-9" id="main-area">
-                        {% for news in news_list %}
-                            <div class="category-layout">
-                                <div class="item-caregory">
-                                    <h4><a href="">{{ news|return_item:1 }}</a></h4>
+        <ul class="nav navbar-nav navbar-right" id="nav">
+            <li><a href="{% url 'latest_stories' %}" class="">Latest Stories</a></li>
+            <li><a href="{% url 'top_stories' %}" class="">Top Stories</a></li>
+            <li><a href="{% url 'india' %}" class="">India</a></li>
+            <li><a href="{% url 'world' %}" class="">World</a></li>
+            <li><a href="{% url 'business' %}" class="">Business</a></li>
+            <li><a href="{% url 'cricket' %}" class="">Cricket</a></li>
+            <li><a href="{% url 'tech' %}" class="">Tech</a></li>
+        </ul>
+    </div>
+    <div class="container">
+        <div class="col-sm-12">
+            <div class="container">
+                <div class="grid ">
+                    {% if news_list %}
+                    {% for news in news_list|return_item_list %}
+                        <a href="{{ news.link }} " target="_blank ">
+                            <div class="col-sm-3 card grid-item " style="width:246px ">
+                                <div class="row card-img ">
+                                    <img class="img-responsive card-img " src="{{ news.storyimage }} ">
                                 </div>
-                                <hr>
-                                <div class="row">
-                                    {% for news_item in news|return_item_list|slice:":4" %}
-                                        {% if forloop.first %}
-                                            <div class="col-sm-7">
-                                                <div class="feature-news-item">
-                                                    <div class="feature-news-item-img">
-                                                        <img src="{{ news_item.fullimage }}" alt="China" style="height:290.812px;width:495px"/>
-                                                    </div>
-                                                    <div class="feature-news-item-title">
-                                                        <h2><a href="{{ news_item.link }}" target="_blank">{{ news_item.title }}</a></h2>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        {% else %}
-                                            <div class="col-sm-5">
-                                                <div class="media-wrapper">
-                                                    <div class="media">
-                                                        <div class="media-left">
-                                                            <a href="{{ news_item.link }}" target="_blank"><img class="media-object" src="{{ news_item.storyimage }}" alt="Generic placeholder image" style="height:80px;width:80px"></a>
-                                                        </div>
-                                                        <div class="media-body">
-                                                            <h3 class="media-heading">
-                                                                <a href="{{ news_item.link }}" target="_blank">{{ news_item.title }}</a>
-                                                            </h3>
-                                                            <p>{{ news_item.description|truncatechars:50 }}....</p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        {% endif %}
-                                    {% endfor %}
+                                <div class="card-info ">
+                                    <div class="row card-title ">{{ news.title }}</div>
+                                    <p><div class="row card-time ">{{ news.updatedat }}</div></p>
+                                    <p><div class="row card-content ">{{ news.summary }}</div></p>
                                 </div>
                             </div>
-                        {% endfor %}
-                    </div>
-                    <div class="col-sm-3" id="side-area">
-
-                    </div>
+                        </a>
+                    {% endfor %}
+                    {% else %}
+                        <p>Nothing</p>
+                    {% endif %}
                 </div>
             </div>
         </div>
+    </div>
+    </body>
+    <script type="text/javascript ">
+        $('.grid').masonry({
+            // options
+            itemSelector: '.grid-item',
+            columnWidth: 140
+        });
+        window.onscroll = function() {scrollFunction()};
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                document.getElementById("myBtn").style.display = "block";
+            } else {
+                document.getElementById("myBtn").style.display = "none";
+            }
+        }
+        function topFunction() {
+            while (document.body.scrollTop!= 0){
+                document.documentElement.scrollTop -= 1;
+                setTimeout(function(){
+                    console.log("THIS IS");
+                }, 2000);
+                console.log(document.body.scrollTop);
+            }
+            document.body.scrollTop = 0;
+        }
 
-        <!--<footer class="container-fluid text-center">-->
-            <!--<p>Footer Text</p>-->
-        <!--</footer>-->
+        $(".scroll-top").on("click", function(e){
+           e.preventDefault();
+           $("html, body").animate({scrollTop:"0"},400);
+        });
 
-        <script>
-            function toggleNav() {
-                if (document.getElementById("mySidenav").style.width == "250px"){
-                    document.getElementById("mySidenav").style.width = "0";
-                    document.getElementById("main-area").style.marginLeft= "0";
-                    document.getElementById("side-area").style.display = "block";
-                    document.getElementById("navbar-button").style.display = "block";
-                }
-                else{
-                    document.getElementById("mySidenav").style.width = "250px";
-                    document.getElementById("main-area").style.marginLeft = "250px";
-                    document.getElementById("main-area").style.transition= "0.5s";
-                    document.getElementById("side-area").style.display = "none";
+        function colorFunction() {
+            var ul = document.getElementById("nav");
+            var items = ul.getElementsByTagName("li");
+
+            for (var i = 0; i < items.length; ++i) {
+                if(items[i].children[0].innerHTML == "{{ title }}"){
+                    items[i].children[0].className = "active";
+                    break;
                 }
             }
-        </script>
-
+        }
+        window.onload = colorFunction;
+    </script>
     </body>
 </html>

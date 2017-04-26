@@ -9,6 +9,10 @@ from django.shortcuts import render
 # local Django
 
 
+# def get_news():
+
+
+
 def latest_stories(request):
     try:
         news_list = feedparser.parse(
@@ -21,7 +25,7 @@ def latest_stories(request):
             'news_list': news_list,
             'title': 'Latest Stories',
         }
-        return render(request, 'news/new_home.html', context)
+        return render(request, 'news/home.html', context)
 
 
 def top_stories(request):
@@ -36,7 +40,7 @@ def top_stories(request):
             'news_list': news_list,
             'title': 'Top Stories',
         }
-        return render(request, 'news/new_home.html', context)
+        return render(request, 'news/home.html', context)
 
 
 def india(request):
@@ -51,7 +55,7 @@ def india(request):
             'news_list': news_list,
             'title': 'India',
         }
-        return render(request, 'news/new_home.html', context)
+        return render(request, 'news/home.html', context)
 
 
 def world(request):
@@ -66,7 +70,7 @@ def world(request):
             'news_list': news_list,
             'title': 'World',
         }
-        return render(request, 'news/new_home.html', context)
+        return render(request, 'news/home.html', context)
 
 
 def business(request):
@@ -81,7 +85,7 @@ def business(request):
             'news_list': news_list,
             'title': 'Business',
         }
-        return render(request, 'news/new_home.html', context)
+        return render(request, 'news/home.html', context)
 
 
 def cricket(request):
@@ -96,7 +100,7 @@ def cricket(request):
             'news_list': news_list,
             'title': 'Cricket',
         }
-        return render(request, 'news/new_home.html', context)
+        return render(request, 'news/home.html', context)
 
 
 def sports(request):
@@ -111,7 +115,7 @@ def sports(request):
             'news_list': news_list,
             'title': 'Sports',
         }
-        return render(request, 'news/new_home.html', context)
+        return render(request, 'news/home.html', context)
 
 
 def tech(request):
@@ -126,7 +130,7 @@ def tech(request):
             'news_list': news_list,
             'title': 'Tech',
         }
-        return render(request, 'news/new_home.html', context)
+        return render(request, 'news/home.html', context)
 
 
 def movies(request):
@@ -141,7 +145,7 @@ def movies(request):
             'news_list': news_list,
             'title': 'Movies',
         }
-        return render(request, 'news/new_home.html', context)
+        return render(request, 'news/home.html', context)
 
 
 def auto(request):
@@ -156,4 +160,4 @@ def auto(request):
             'news_list': news_list,
             'title': 'Auto',
         }
-        return render(request, 'news/new_home.html', context)
+        return render(request, 'news/home.html', context)
